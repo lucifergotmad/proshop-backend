@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "RESTful API for proshop",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "data-import": "node seeder",
+    "data-destroy": "node seeder -d"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
